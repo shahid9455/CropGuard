@@ -9,10 +9,14 @@ from keras.preprocessing import image
 
 # Initialize the OpenAI client
 client = OpenAI(
-    api_key="Use Your AIMLAPI key here",
+    api_key="Add your AIMLAPI key here",
     base_url="https://api.aimlapi.com",
 )
 
+client_solar = OpenAI(
+    api_key="Add your solar api key",  # Solar API key
+    base_url="https://api.upstage.ai/v1/solar"
+)
 # Load your pre-trained crop disease model
 model_disease = tf.keras.models.load_model('crop_disease_model.h5')  # Update with your model path
 
