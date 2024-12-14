@@ -255,7 +255,6 @@ def main():
             88: 'Wheat powdery mildew'
         }
 
-# The rest of the code remains the same
 
         if uploaded_file is not None:
             # Save the uploaded file
